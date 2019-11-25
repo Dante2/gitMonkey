@@ -1,0 +1,9 @@
+README.rst
+setup.py
+gitmonkey/__init__.py
+gitmonkey/main.py
+gitmonkey.egg-info/PKG-INFO
+gitmonkey.egg-info/SOURCES.txt
+gitmonkey.egg-info/dependency_links.txt
+gitmonkey.egg-info/requires.txt
+gitmonkey.egg-info/top_level.txt
