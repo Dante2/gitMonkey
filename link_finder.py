@@ -31,5 +31,3 @@ class linkFinder(HTMLParser):
     #error checking
     def error(self, message):
         pass
-
-    handle

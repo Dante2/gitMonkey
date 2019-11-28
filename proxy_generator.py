@@ -3,7 +3,9 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import random
 # this function create a list of random proxies that you can use
-
+proxies_nice = {
+ 'http': 'http: // 46.235.53.26:3128',
+}
 proxies = []  # Will contain proxies [ip, port]
 
 def createProxyList():
