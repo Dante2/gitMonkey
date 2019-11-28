@@ -28,3 +28,5 @@ def url_issues(parsed):
             return repos
         except:
             return ''
+
+print()

@@ -10,10 +10,10 @@ def createProxyList():
     ua = UserAgent()  # generate a random user agent
 
     proxies_req = Request('https://www.sslproxies.org/') # this request retrieves a list of proxies from the site
-    # proxies_req.add_header('User-Agent', ua.random) # adds the user agent to the header request
-    # proxies_doc = urlopen(proxies_req).read().decode('utf8')
+    proxies_req.add_header('User-Agent', ua.random) # adds the user agent to the header request
+    proxies_doc = urlopen(proxies_req).read().decode('utf8')
 
-    soup = BeautifulSoup(proxies_req, 'html.parser')
+    soup = BeautifulSoup(proxies_doc, 'html.parser')
     proxies_table = soup.find(id='proxylisttable')
     # print(proxies_table.prettify())
 
