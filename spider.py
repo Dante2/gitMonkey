@@ -1,6 +1,6 @@
 #spider class
 # from urllib.request import urlopen
-# from bs4 import BeautifulSoup as soup
+from bs4 import BeautifulSoup as soup
 from domain import *
 # import urllib3
 import requests
@@ -17,4 +17,11 @@ class spidey:
     def crawl(self):
         r = requests.get(self.page_url, self.proxy)
         meat = r.text
-        return meat
+        meathead =r.url
+        meaty = r.encoding
+        souped = soup(meat, 'html.parser')
+        # return souped
+        print(souped.title)
+        for link in souped.find_all('a'):
+            print(link.get('href'))
+        # return souped.prettify()

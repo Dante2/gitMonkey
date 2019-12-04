@@ -17,4 +17,7 @@ issues_get = url_issues(url)
 spidey_repos = spidey(repos_get, ip_generator.prox_out(), 'poopy')
 spidey_wikies = spidey(wikies_get, ip_generator.prox_out(), 'poopy')
 spidey_issues = spidey(issues_get, ip_generator.prox_out(), 'poopy')
-print (spidey_wikies.crawl())
+
+print(spidey_repos.crawl())
+
+# print (spidey_wikies.crawl())
