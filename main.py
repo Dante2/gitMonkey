@@ -14,9 +14,9 @@ wikies_get = url_wikies(url)
 issues_get = url_issues(url)
 
 # 3 instances of the spider class to get each respective type. these staticly declared but the most efficient implamentation would dynamic
-spidey_repos = spidey(repos_get, ip_generator.prox_out(), 'poopy')
-spidey_wikies = spidey(wikies_get, ip_generator.prox_out(), 'poopy')
-spidey_issues = spidey(issues_get, ip_generator.prox_out(), 'poopy')
+spidey_repos = spidey(repos_get, ip_generator.prox_out())
+spidey_wikies = spidey(wikies_get, ip_generator.prox_out())
+spidey_issues = spidey(issues_get, ip_generator.prox_out())
 
 print(spidey_repos.crawl())
 
